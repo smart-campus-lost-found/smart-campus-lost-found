@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#10213d">
+<title>CampusFind | Marwadi University</title>
+<style>
+:root{--navy:#10213d;--blue:#4778f5;--bg:#f5f7fb;--text:#1d2b40;--muted:#718096;--line:#e3e9f2;--green:#16865d;--red:#c63f4d;--shadow:0 12px 35px #192e520d}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:95px}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}button,input,select,textarea{font:inherit}button,a,label{touch-action:manipulation}a{color:inherit;text-decoration:none}.container{width:min(1160px,92%);margin:auto}.navbar{position:sticky;top:0;z-index:10;background:#fffffff0;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:74px}.brand{display:flex;align-items:center;gap:10px;font-size:21px;font-weight:850;color:var(--navy)}.brand-mark{display:grid;place-items:center;width:42px;height:42px;border-radius:14px;color:white;background:linear-gradient(140deg,#5788ff,#315bd0)}.brand span span{color:var(--blue)}.nav-links{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.nav-links a{font-size:13px;font-weight:750;color:#59677d;padding:9px 11px;border-radius:10px}.nav-links a:hover{background:#edf3ff;color:var(--blue)}.btn{border:0;border-radius:10px;padding:11px 15px;display:inline-flex;align-items:center;justify-content:center;gap:7px;font-weight:750;font-size:13px;cursor:pointer;transition:.18s}.btn:hover{transform:translateY(-1px)}.primary{background:var(--blue);color:white}.dark{background:var(--navy);color:white}.light{background:white;color:var(--navy);border:1px solid var(--line)}.danger{background:#fff0f1;color:var(--red)}.success{background:#e6f7ef;color:var(--green)}.btn:disabled{opacity:.55;cursor:not-allowed;transform:none}.hero{padding:68px 0;color:white;background:radial-gradient(ellipse at 85% 10%,#6792ff4d,transparent 35%),linear-gradient(125deg,#10213d,#244a86)}.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:38px;align-items:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid #ffffff30;border-radius:25px;padding:6px 11px;color:#dbe6ff;font-size:11px;font-weight:800}.dot{width:7px;height:7px;background:#79edbd;border-radius:50%}.hero h1{font-size:clamp(36px,5vw,58px);line-height:1.1;letter-spacing:-1.8px;margin:20px 0}.hero h1 span{color:#8db0ff}.hero p{max-width:600px;color:#c7d4e9}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:23px}.hero-card{padding:23px;border:1px solid #ffffff25;border-radius:22px;background:#ffffff10;box-shadow:0 25px 60px #06142c35}.hero-card h3{margin:0 0 12px}.hero-stat{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}.hero-stat div{padding:12px;background:#ffffff10;border-radius:12px}.hero-stat strong{display:block;font-size:23px}.hero-stat small{color:#c7d4e9}.section{padding:40px 0;scroll-margin-top:90px}.heading{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:18px}.kicker{font-size:10px;font-weight:850;letter-spacing:1.5px;color:var(--blue)}h2{margin:3px 0;color:var(--navy);font-size:clamp(24px,3vw,31px);letter-spacing:-.7px}.sub{margin:4px 0 0;color:var(--muted);font-size:13px}.panel{background:white;border:1px solid var(--line);border-radius:17px;box-shadow:var(--shadow)}.filters{padding:17px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr auto;gap:9px}.control{width:100%;min-width:0;padding:11px 12px;border:1px solid #dfe6f0;border-radius:10px;background:white;color:var(--text);font-size:13px}.control:focus{outline:3px solid #4778f51b;border-color:var(--blue)}.countline{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:12px;margin:17px 0 12px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.item{overflow:hidden;min-width:0;border:1px solid var(--line);border-radius:16px;background:white;box-shadow:0 5px 20px #132b4c08;animation:appear .3s ease both}.item-photo{height:190px;position:relative;display:grid;place-items:center;background:linear-gradient(135deg,#edf3ff,#f7f9fd);font-size:43px}.item-photo img{width:100%;height:100%;object-fit:cover}.chip{position:absolute;top:11px;left:11px;background:white;padding:4px 9px;border-radius:7px;font-size:10px;font-weight:900;box-shadow:0 3px 10px #142b4a12}.chip.lost{color:#bb6322}.chip.found{color:var(--green)}.chip.resolved{left:auto;right:11px;background:#143f32;color:white}.item-body{padding:15px}.meta{display:flex;justify-content:space-between;gap:7px;color:var(--muted);font-size:10px}.category{color:var(--blue);font-weight:800}.item h3{font-size:18px;line-height:1.3;color:var(--navy);margin:8px 0}.desc{font-size:13px;color:#647187;min-height:40px;overflow-wrap:anywhere}.details{border-top:1px solid #edf0f5;margin-top:12px;padding-top:10px;font-size:12px;color:#647187;display:grid;gap:5px;overflow-wrap:anywhere}.time{margin-top:9px;font-size:11px;color:#5d6c82}.actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:13px}.actions .btn{font-size:11px;padding:8px 10px}.empty{grid-column:1/-1;padding:42px 18px;text-align:center;border:1px dashed #ccd6e5;border-radius:17px;background:white}.empty .emoji{font-size:34px}.empty h3{margin:8px 0 3px;color:var(--navy)}.empty p{font-size:13px;color:var(--muted)}.auth-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.auth-email{font-size:12px;color:var(--muted)}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:start}.form-card{padding:22px}.form-card h3{margin:0;color:var(--navy);font-size:20px}.form-card>p{font-size:12px;color:var(--muted);margin:4px 0 18px}.field{margin-bottom:13px}.field label{display:block;font-size:12px;font-weight:800;color:#36455a;margin-bottom:5px}.field textarea{min-height:88px;resize:vertical}.photo-tools{display:flex;gap:8px;flex-wrap:wrap}.photo-tools label{cursor:pointer}.hint{font-size:11px;color:var(--muted);margin:7px 0}.preview{display:none;margin-top:10px;padding:9px;background:#f7f9fd;border:1px dashed #c7d4e8;border-radius:12px}.preview.show{display:block}.preview img{display:block;width:100%;max-height:210px;object-fit:contain;background:#edf2fa;border-radius:8px}.message{display:none;padding:10px 12px;margin:12px 0;border-radius:9px;font-size:12px}.message.show{display:block}.message.error{background:#fff0f1;color:#a12c38}.message.ok{background:#e6f7ef;color:#126b4a}.message.info{background:#edf3ff;color:#244fa7}.notice{margin:15px 0 45px;padding:15px 17px;border:1px solid #f2e1b6;border-radius:13px;background:#fff8e9;color:#76571a;font-size:12px}.notice strong{display:block;color:#62480e}.footer{background:#0c1a30;color:#e6edf8;padding:26px 0}.footer-row{display:flex;justify-content:space-between;gap:18px;align-items:center}.muted-light{font-size:11px;color:#a9b8cf}.toast{position:fixed;right:18px;bottom:18px;z-index:30;max-width:calc(100% - 36px);padding:12px 16px;background:#132d4e;color:white;border-radius:11px;box-shadow:0 12px 35px #08152b30;font-size:13px;display:none}.toast.show{display:block}@keyframes appear{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}@media(max-width:950px){.hero-grid{grid-template-columns:1fr .8fr;gap:20px}.filters{grid-template-columns:repeat(2,minmax(0,1fr))}.filters input{grid-column:1/-1}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:700px){.nav-inner{align-items:flex-start;flex-direction:column;padding:10px 0}.nav-links{gap:3px}.nav-links a{padding:7px 8px;font-size:12px}.hero{padding:45px 0}.hero-grid,.form-grid{grid-template-columns:1fr}.hero h1{letter-spacing:-1px}.heading{align-items:flex-start;flex-direction:column}.footer-row{align-items:flex-start;flex-direction:column}}@media(max-width:480px){.grid,.filters{grid-template-columns:1fr}.filters input{grid-column:auto}.hero h1{font-size:37px}.hero-actions .btn{flex:1 1 100%}.form-card{padding:17px}.item-photo{height:210px}.actions .btn{flex:1 1 100%}}@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<nav class="navbar"><div class="container nav-inner">
+<a class="brand" href="#home"><span class="brand-mark">⌕</span><span>Campus<span>Find</span></span></a>
+<div class="nav-links"><a href="#home">Home</a><a href="#browse">Browse Items</a><a href="#report">Report Item</a><a href="#account">Sign in</a></div>
+</div></nav>
+<header class="hero" id="home"><div class="container hero-grid">
+<div><span class="eyebrow"><span class="dot"></span> MARWADI UNIVERSITY · CAMPUS COMMUNITY</span>
+<h1>Lost something?<br>Let's <span>find it together.</span></h1>
+<p>A shared campus lost-and-found board. Browse reports publicly, then sign in and verify your campus location to post an item.</p>
+<div class="hero-actions"><a class="btn primary" href="#report">＋ Report an item</a><a class="btn light" href="#browse">⌕ Browse listings</a></div></div>
+<aside class="hero-card"><h3>Campus board overview</h3><p style="color:#c7d4e9;font-size:12px;margin-top:0">Shared listings from the Supabase database</p>
+<div class="hero-stat"><div><strong id="totalCount">—</strong><small>Total</small></div><div><strong id="activeCount">—</strong><small>Active</small></div><div><strong id="resolvedCount">—</strong><small>Resolved</small></div></div>
+<p id="connectionStatus" style="font-size:12px;color:#c7d4e9;margin-bottom:0">Connecting to database…</p></aside>
+</div></header>
+<main class="container">
+<section class="section" id="browse"><div class="heading"><div><div class="kicker">PUBLIC COMMUNITY BOARD</div><h2>Browse reported items</h2><p class="sub">Anyone can browse active and resolved reports without signing in.</p></div><button class="btn light" id="refreshButton" type="button">↻ Refresh</button></div>
+<div class="panel filters"><input class="control" id="search" type="search" placeholder="Search item name or description…" aria-label="Search reports">
+<select class="control" id="typeFilter" aria-label="Filter Lost or Found"><option value="">Lost & Found</option><option>Lost</option><option>Found</option></select>
+<select class="control" id="categoryFilter" aria-label="Filter category"><option value="">All categories</option><option>Electronics</option><option>ID / Cards</option><option>Books / Notes</option><option>Bags</option><option>Clothing</option><option>Keys</option><option>Accessories</option><option>Other</option></select>
+<select class="control" id="statusFilter" aria-label="Filter status"><option value="Active">Active</option><option value="Resolved">Resolved</option><option value="">All statuses</option></select>
+<button class="btn light" id="resetFilters" type="button">Reset</button></div>
+<div class="countline"><span id="resultsCount">Loading listings…</span><span>All timestamps shown in Asia/Kolkata (IST)</span></div>
+<div class="grid" id="itemsGrid"><div class="empty"><div class="emoji">⏳</div><h3>Loading listings</h3><p>Connecting to the shared database…</p></div></div>
+</section>
+<section class="section" id="account"><div class="heading"><div><div class="kicker">ACCOUNT</div><h2>Sign in to manage reports</h2><p class="sub">Sign in with your email. Supabase sends a magic link to verify your account.</p></div></div>
+<div class="panel form-card"><div class="auth-row"><input class="control" style="max-width:360px" type="email" id="emailInput" placeholder="you@example.com" autocomplete="email" aria-label="Email address"><button class="btn primary" id="signInButton" type="button">Email me a sign-in link</button><button class="btn light" id="signOutButton" type="button" hidden>Sign out</button></div><p id="authStatus" class="sub" aria-live="polite">You are browsing as a visitor.</p><div class="message" id="authMessage" role="status"></div></div>
+</section>
+<section class="section" id="report"><div class="heading"><div><div class="kicker">CAMPUS-VERIFIED POSTING</div><h2>Report a lost or found item</h2><p class="sub">Sign in first. When you submit, your device location is checked by the server against the configured campus boundary.</p></div></div>
+<div class="panel form-card" style="margin-bottom:17px"><div class="message info show" id="locationInfo">Your browser will ask for location permission when you submit. Posting and photo uploads are rejected if location is denied, unavailable, or outside the configured campus boundary. GPS checks can be spoofed and are not perfect proof of physical presence.</div></div>
+<div class="form-grid">
+<form class="panel form-card" id="reportForm">
+<h3>Create a report</h3><p>Required fields are marked *. Your original posting time is set by the database and cannot be chosen in this form.</p>
+<div class="field"><label for="type">Report type *</label><select class="control" id="type" required><option value="Lost">Lost item</option><option value="Found">Found item</option></select></div>
+<div class="field"><label for="name">Item name *</label><input class="control" id="name" maxlength="80" required placeholder="e.g. Black wallet"></div>
+<div class="field"><label for="category">Category *</label><select class="control" id="category" required><option value="">Choose category</option><option>Electronics</option><option>ID / Cards</option><option>Books / Notes</option><option>Bags</option><option>Clothing</option><option>Keys</option><option>Accessories</option><option>Other</option></select></div>
+<div class="field"><label for="description">Description *</label><textarea class="control" id="description" maxlength="500" required placeholder="Colour, brand, identifying details…"></textarea></div>
+<div class="field"><label for="location">Campus location *</label><input class="control" id="location" maxlength="120" required placeholder="e.g. Library entrance"></div>
+<div class="field"><label for="itemDate">Date lost/found *</label><input class="control" type="date" id="itemDate" required></div>
+<div class="field"><label for="contact">Contact method *</label><input class="control" id="contact" maxlength="120" required placeholder="College email or safe contact method"></div>
+<div class="field"><label>Item photo (optional)</label><input hidden type="file" id="cameraInput" accept="image/*" capture="environment"><input hidden type="file" id="galleryInput" accept="image/*">
+<div class="photo-tools"><label class="btn light" for="cameraInput">📷 Take a photo</label><label class="btn light" for="galleryInput">▧ Choose from gallery</label></div><p class="hint">Images only, up to 8 MB. Photo upload is blocked unless server-side campus verification succeeds.</p>
+<div class="preview" id="previewBox"><img id="previewImage" alt="Selected photo preview"><p class="hint" id="previewName"></p><button class="btn danger" type="button" id="removePhoto">Remove photo</button></div></div>
+<div class="message" id="formMessage" role="status" aria-live="polite"></div>
+<button class="btn primary" style="width:100%" type="submit" id="submitButton">Verify location & submit →</button>
+</form>
+<div class="panel form-card"><h3>Your reports</h3><p>Only your own reports show management buttons here. Database policies and the server function enforce ownership.</p><div id="myItems"><div class="empty"><div class="emoji">🔐</div><h3>Sign in to manage reports</h3><p>After signing in, your own active and resolved reports will appear here.</p></div></div>
+<div class="notice"><strong>Demo and security notes</strong>Public listings and photos are visible to everyone. Do not upload ID cards, private documents, or images containing sensitive information. GPS can be inaccurate or manipulated; campus verification is a useful gate, not tamper-proof proof.</div></div>
+</div></section>
+<div class="notice"><strong>Backend setup required</strong>The public board and posting form need a configured Supabase project, SQL schema, public photo bucket, deployed Edge Function, and verified campus boundary. Until these are configured, shared posting will not work. Do not put a Supabase secret/service-role key in this file.</div>
+</main>
+<footer class="footer"><div class="container footer-row"><div><strong>CampusFind</strong><div class="muted-light">Smart Campus Lost & Found · Marwadi University student project</div></div><span class="muted-light">Shared database · IST timestamps</span></div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="./config.js"></script>
+<script>
+"use strict";
+const MAX_FILE = 8 * 1024 * 1024;
+const $ = id => document.getElementById(id);
+let client = null, session = null, listings = [], selectedPhoto = null, previewUrl = null;
+let toastTimer = null;
+
+function toast(message){const t=$("toast");t.textContent=message;t.classList.add("show");clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove("show"),3500)}
+function message(id,text,type){const el=$(id);el.textContent=text;el.className="message show "+type}
+function clearMessage(id){const el=$(id);el.textContent="";el.className="message"}
+function escapeHtml(value){return String(value??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function fullTime(value){return new Intl.DateTimeFormat("en-IN",{timeZone:"Asia/Kolkata",day:"2-digit",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit",hour12:true,timeZoneName:"short"}).format(new Date(value))}
+function relativeTime(value){const seconds=Math.max(0,Math.floor((Date.now()-new Date(value).getTime())/1000));if(seconds<60)return "Posted just now";if(seconds<3600)return "Posted "+Math.floor(seconds/60)+" minute(s) ago";if(seconds<86400)return "Posted "+Math.floor(seconds/3600)+" hour(s) ago";if(seconds<604800)return "Posted "+Math.floor(seconds/86400)+" day(s) ago";return "Posted "+Math.floor(seconds/604800)+" week(s) ago"}
+function safeImage(url){if(!url)return "";try{const u=new URL(url);return u.protocol==="https:"?u.href:""}catch{return ""}}
+function setupClient(){
+  if(!window.supabase||!window.CAMPUSFIND_CONFIG||!CAMPUSFIND_CONFIG.url||!CAMPUSFIND_CONFIG.publishableKey||CAMPUSFIND_CONFIG.url.includes("YOUR_PROJECT")){
+    $("connectionStatus").textContent="Setup required: configure config.js";$("itemsGrid").innerHTML='<div class="empty"><div class="emoji">⚙️</div><h3>Supabase is not configured</h3><p>Follow the setup guide and add your project URL and publishable key to config.js.</p></div>';return false;
+  }
+  client=window.supabase.createClient(CAMPUSFIND_CONFIG.url,CAMPUSFIND_CONFIG.publishableKey);
+  return true;
+}
+function makeCard(item,manage=false){
+  const card=document.createElement("article");card.className="item";
+  const imageBox=document.createElement("div");imageBox.className="item-photo";
+  if(item.photo_url){const img=document.createElement("img");img.src=safeImage(item.photo_url);img.alt="Photo of "+item.name;img.loading="lazy";img.onerror=()=>{img.remove();imageBox.insertAdjacentText("afterbegin","📦")};imageBox.appendChild(img)}else imageBox.textContent="📦";
+  const chip=document.createElement("span");chip.className="chip "+(item.type==="Lost"?"lost":"found");chip.textContent=item.type.toUpperCase();imageBox.appendChild(chip);
+  if(item.status==="Resolved"){const r=document.createElement("span");r.className="chip resolved";r.textContent="✓ RESOLVED";imageBox.appendChild(r)}
+  const body=document.createElement("div");body.className="item-body";
+  body.innerHTML='<div class="meta"><span class="category">'+escapeHtml(item.category)+'</span><span>'+escapeHtml(item.item_date||"")+'</span></div><h3>'+escapeHtml(item.name)+'</h3><div class="desc">'+escapeHtml(item.description)+'</div><div class="details"><div>📍 '+escapeHtml(item.location)+'</div><div>✉ '+escapeHtml(item.contact)+'</div></div><div class="time"><strong>Posted:</strong> '+escapeHtml(fullTime(item.created_at))+'<br>'+escapeHtml(relativeTime(item.created_at))+(item.updated_at&&new Date(item.updated_at)>new Date(item.created_at)?'<br><strong>Updated:</strong> '+escapeHtml(fullTime(item.updated_at)):"")+'</div>';
+  if(manage){
+    const actions=document.createElement("div");actions.className="actions";
+    const status=document.createElement("button");status.className="btn success";status.type="button";status.textContent=item.status==="Active"?"✓ Mark resolved":"↺ Reopen";status.onclick=()=>changeStatus(item);actions.appendChild(status);
+    const edit=document.createElement("button");edit.className="btn light";edit.type="button";edit.textContent="Edit details";edit.onclick=()=>editItem(item);actions.appendChild(edit);
+    const del=document.createElement("button");del.className="btn danger";del.type="button";del.textContent="Delete";del.onclick=()=>deleteItem(item);actions.appendChild(del);
+    body.appendChild(actions);
+  }
+  card.append(imageBox,body);return card;
+}
+function render(){
+  const q=$("search").value.trim().toLowerCase(),type=$("typeFilter").value,category=$("categoryFilter").value,status=$("statusFilter").value;
+  const filtered=listings.filter(i=>(!q||(i.name+" "+i.description).toLowerCase().includes(q))&&(!type||i.type===type)&&(!category||i.category===category)&&(!status||i.status===status)).sort((a,b)=>new Date(b.created_at)-new Date(a.created_at));
+  $("itemsGrid").replaceChildren();$("resultsCount").textContent=filtered.length+" report(s)";
+  $("totalCount").textContent=listings.length;$("activeCount").textContent=listings.filter(i=>i.status==="Active").length;$("resolvedCount").textContent=listings.filter(i=>i.status==="Resolved").length;
+  if(!filtered.length){$("itemsGrid").innerHTML='<div class="empty"><div class="emoji">⌕</div><h3>No matching reports</h3><p>Try different search terms or reset your filters.</p><button class="btn light" id="emptyReset">Reset filters</button></div>';const b=$("emptyReset");if(b)b.onclick=resetFilters}else filtered.forEach(i=>$("itemsGrid").appendChild(makeCard(i)));
+  renderMine();
+}
+function renderMine(){
+  const box=$("myItems");box.replaceChildren();
+  if(!session){box.innerHTML='<div class="empty"><div class="emoji">🔐</div><h3>Sign in to manage reports</h3><p>Your own reports and management buttons appear here after sign-in.</p></div>';return}
+  const mine=listings.filter(i=>i.created_by===session.user.id).sort((a,b)=>new Date(b.created_at)-new Date(a.created_at));
+  if(!mine.length){box.innerHTML='<div class="empty"><div class="emoji">📭</div><h3>No reports yet</h3><p>Your reports will appear here after you create one.</p></div>';return}
+  mine.forEach(i=>box.appendChild(makeCard(i,true)));
+}
+async function loadListings(){
+  if(!client)return;
+  $("connectionStatus").textContent="Loading shared reports…";
+  try{const {data,error}=await client.from("items").select("id,type,name,category,description,location,item_date,contact,status,photo_url,created_at,updated_at,created_by").order("created_at",{ascending:false});
+    if(error)throw error;listings=data||[];$("connectionStatus").textContent="✓ Connected to shared database";render()
+  }catch(e){console.error(e);$("connectionStatus").textContent="Could not load reports";$("itemsGrid").innerHTML='<div class="empty"><div class="emoji">⚠️</div><h3>Could not load listings</h3><p>'+escapeHtml(e.message||"Check Supabase setup and database policies.")+'</p><button class="btn light" id="retryLoad">Try again</button></div>';const b=$("retryLoad");if(b)b.onclick=loadListings}
+}
+function resetFilters(){$("search").value="";$("typeFilter").value="";$("categoryFilter").value="";$("statusFilter").value="Active";render()}
+function releasePhoto(){if(previewUrl)URL.revokeObjectURL(previewUrl);previewUrl=null;selectedPhoto=null;$("cameraInput").value="";$("galleryInput").value="";$("previewImage").removeAttribute("src");$("previewName").textContent="";$("previewBox").classList.remove("show")}
+function choosePhoto(file){
+  clearMessage("formMessage");if(!file)return;
+  if(!file.type.startsWith("image/")){message("formMessage","Please select a valid image file.","error");return}
+  if(file.size>MAX_FILE){message("formMessage","The image is larger than 8 MB. Choose a smaller image.","error");return}
+  releasePhoto();selectedPhoto=file;previewUrl=URL.createObjectURL(file);$("previewImage").src=previewUrl;$("previewName").textContent=file.name+" · "+(file.size/1024/1024).toFixed(2)+" MB";$("previewBox").classList.add("show")
+}
+function getPosition(){
+  return new Promise((resolve,reject)=>{
+    if(!navigator.geolocation){reject(new Error("This browser does not provide location services."));return}
+    navigator.geolocation.getCurrentPosition(pos=>resolve({lat:pos.coords.latitude,lng:pos.coords.longitude,accuracy:pos.coords.accuracy}),err=>{
+      const messages={1:"Location permission was denied. Allow location access and try again.",2:"Your location is unavailable. Move to an area with a GPS signal and retry.",3:"Location request timed out. Please try again."};
+      reject(new Error(messages[err.code]||"Could not verify your location."))
+    },{enableHighAccuracy:true,timeout:15000,maximumAge:0})
+  })
+}
+async function callFunction(action,fields={},file=null,position=null){
+  const {data:{session:current}}=await client.auth.getSession();if(!current)throw new Error("Please sign in before managing reports.");
+  const form=new FormData();form.append("action",action);
+  Object.entries(fields).forEach(([k,v])=>{if(v!==undefined&&v!==null)form.append(k,String(v))});
+  if(file)form.append("photo",file,file.name);
+  if(position){form.append("latitude",String(position.lat));form.append("longitude",String(position.lng));form.append("accuracy",String(position.accuracy))}
+  const response=await fetch(CAMPUSFIND_CONFIG.url+"/functions/v1/campus-report",{method:"POST",headers:{"apikey":CAMPUSFIND_CONFIG.publishableKey,"Authorization":"Bearer "+current.access_token},body:form});
+  const result=await response.json().catch(()=>({error:"Server returned an unreadable response."}));
+  if(!response.ok)throw new Error(result.error||"The server rejected this request.");
+  return result;
+}
+async function submitReport(event){
+  event.preventDefault();clearMessage("formMessage");
+  if(!client){message("formMessage","Configure Supabase before posting.","error");return}
+  if(!session){message("formMessage","Please sign in first. You can browse reports without signing in.","error");$("account").scrollIntoView({behavior:"smooth"});return}
+  const form=event.currentTarget;if(!form.reportValidity())return;
+  const itemDate=$("itemDate").value;
+  if(itemDate>new Date().toLocaleDateString("en-CA")){message("formMessage","Choose today or an earlier date.","error");return}
+  const button=$("submitButton");button.disabled=true;button.textContent="Checking location…";
+  try{
+    const position=await getPosition();
+    button.textContent="Verifying and saving…";
+    const fields={type:$("type").value,name:$("name").value.trim(),category:$("category").value,description:$("description").value.trim(),location:$("location").value.trim(),item_date:itemDate,contact:$("contact").value.trim()};
+    await callFunction("create",fields,selectedPhoto,position);
+    form.reset();releasePhoto();message("formMessage","Report submitted. Its posting time was set by the database.","ok");toast("Report submitted successfully.");await loadListings()
+  }catch(e){console.error(e);message("formMessage",e.message||"Could not submit the report.","error")}
+  finally{button.disabled=false;button.textContent="Verify location & submit →"}
+}
+async function changeStatus(item){
+  if(!confirm((item.status==="Active"?"Mark this report as resolved?":"Reopen this report?")))return;
+  try{await callFunction("status",{id:item.id,status:item.status==="Active"?"Resolved":"Active"});toast("Report status updated.");await loadListings()}catch(e){toast(e.message)}
+}
+async function editItem(item){
+  const name=prompt("Edit item name:",item.name);if(name===null)return;
+  const description=prompt("Edit description:",item.description);if(description===null)return;
+  const location=prompt("Edit campus location:",item.location);if(location===null)return;
+  const contact=prompt("Edit contact method:",item.contact);if(contact===null)return;
+  try{await callFunction("update",{id:item.id,name:name.trim(),description:description.trim(),location:location.trim(),contact:contact.trim()});toast("Report updated.");await loadListings()}catch(e){toast(e.message)}
+}
+async function deleteItem(item){
+  if(!confirm('Delete "'+item.name+'"? This cannot be undone.'))return;
+  try{await callFunction("delete",{id:item.id});toast("Report deleted.");await loadListings()}catch(e){toast(e.message)}
+}
+async function signIn(){
+  if(!client)return;
+  const email=$("emailInput").value.trim();if(!email){message("authMessage","Enter your email address first.","error");return}
+  const button=$("signInButton");button.disabled=true;
+  try{const {error}=await client.auth.signInWithOtp({email,options:{emailRedirectTo:window.location.href.split("#")[0]}});if(error)throw error;message("authMessage","Check your email for the sign-in link. Open it in this browser to finish signing in.","ok")}
+  catch(e){message("authMessage",e.message||"Could not send sign-in link.","error")}
+  finally{button.disabled=false}
+}
+function updateAuthUI(){
+  $("signOutButton").hidden=!session;$("signInButton").hidden=!!session;$("emailInput").hidden=!!session;
+  $("authStatus").textContent=session?"Signed in as "+session.user.email:"You are browsing as a visitor. Sign in to post or manage your own reports.";
+  renderMine()
+}
+async function init(){
+  $("itemDate").max=new Date().toLocaleDateString("en-CA");
+  $("cameraInput").addEventListener("change",e=>choosePhoto(e.target.files&&e.target.files[0]));
+  $("galleryInput").addEventListener("change",e=>choosePhoto(e.target.files&&e.target.files[0]));
+  $("removePhoto").addEventListener("click",releasePhoto);
+  $("reportForm").addEventListener("submit",submitReport);
+  $("signInButton").addEventListener("click",signIn);
+  $("signOutButton").addEventListener("click",async()=>{await client.auth.signOut();toast("Signed out.")});
+  $("refreshButton").addEventListener("click",loadListings);$("resetFilters").addEventListener("click",resetFilters);
+  ["search","typeFilter","categoryFilter","statusFilter"].forEach(id=>$(id).addEventListener(id==="search"?"input":"change",render));
+  if(!setupClient())return;
+  const {data:{session:current}}=await client.auth.getSession();session=current;updateAuthUI();
+  client.auth.onAuthStateChange((_event,newSession)=>{session=newSession;updateAuthUI()});
+  await loadListings();
+  // Keep public listing current across browser tabs and after other users' changes.
+  client.channel("public-items-changes").on("postgres_changes",{event:"*",schema:"public",table:"items"},()=>loadListings()).subscribe();
+}
+window.addEventListener("beforeunload",()=>{if(previewUrl)URL.revokeObjectURL(previewUrl)});
+init();
+</script>
+</body>
+</html>
